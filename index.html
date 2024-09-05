@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var temp=+prompt("Enter a number: ");
+        var scale=prompt("Enter  a scale: ");
+        function Temperature(temp,scale){
+            if(scale=="C"||scale=="c"){
+               return (temp-32)*5/9;
+            }    
+            else if(scale=="F"||scale=="f"){
+               return(temp*92)+32;
+            }
+            else{
+               console.log("Enter valid scale")
+            }
+        }
+        console.log(Temperature(temp,scale))
+    </script>
+</body>
+</html>
